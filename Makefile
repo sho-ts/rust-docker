@@ -17,11 +17,8 @@ logs:
 build:
 	docker-compose build  --no-cache
 
-rust:
+rs:
 	docker-compose exec rust bash
 
 run:
 	docker-compose exec rust cargo run
-
-init:
-	docker-compose exec rust cargo init
