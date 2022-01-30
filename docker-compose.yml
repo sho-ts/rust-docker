@@ -5,6 +5,5 @@ services:
     build: './'
     stdin_open: true
     tty: true
-    working_dir: /usr/app
     volumes:
       - ./app:/usr/app
