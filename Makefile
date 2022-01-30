@@ -14,7 +14,7 @@ ps:
 logs:
 	docker-compose logs
 
-build:
+build-docker:
 	docker-compose build  --no-cache
 
 rs:
@@ -22,3 +22,9 @@ rs:
 
 run:
 	docker-compose exec rust cargo run
+
+build:
+	docker-compose exec rust cargo build
+
+check:
+	docker-compose exec rust cargo check
