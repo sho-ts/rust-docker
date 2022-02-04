@@ -1,5 +1,7 @@
 FROM rust:latest
 
+RUN rustup component add rustfmt
+
 WORKDIR /usr
 
 ADD docker-entrypoint.sh /
